@@ -7,8 +7,6 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn import metrics
 import joblib
 
-
-
 # load the dataset
 dataset = pd.read_csv("train.csv")
 numerical_cols = dataset.select_dtypes(include=['int64','float64']).columns.tolist()
